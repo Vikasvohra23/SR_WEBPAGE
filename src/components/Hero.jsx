@@ -28,6 +28,7 @@ export default function Hero() {
 
           <p className="hero__sub">
             From presidential artifacts and luxury train interiors to industrial plant relocations
+
             and global exports — trusted by the institutions that can't afford mistakes since 2017.
           </p>
 

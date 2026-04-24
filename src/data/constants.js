@@ -1,8 +1,8 @@
 // ─── REPLACE THESE BEFORE GOING LIVE ───────────────────────
-export const YOUR_WA_NUMBER   = "919999999999";   // e.g. 919876543210
-export const YOUR_EMAIL       = "you@example.com"; // for mailto fallback
+export const YOUR_WA_NUMBER   = "9319571414";   // e.g. 919876543210
+export const YOUR_EMAIL       = "sr.relocationservices@gmail.com"; // for mailto fallback
 export const ADMIN_PASSWORD   = "srrs2017";        // change this!
-export const RATE_PER_CFT     = 170;               // hidden from clients
+export const RATE_PER_CFT     = 120;               // hidden from clients
 
 // ─── NAV ────────────────────────────────────────────────────
 export const NAV_LINKS = ["Home","Services","About","Projects","Gallery","Estimate","Contact"];
@@ -28,21 +28,21 @@ export const CFT_ITEMS = [
 
 // ─── SERVICES ───────────────────────────────────────────────
 export const SERVICES = [
-  { num:"01", title:"Industrial Plant Relocation",  tags:["Rigging","No-Dismantle","Site-to-Site"],     desc:"Full plant moves, heavy machinery, robots, CMM machines, furnaces, production lines. Shifted a 13-ft production line without dismantling." },
+  { num:"01", title:"Industrial Plant Relocation",  tags:["Rigging","No-Dismantle","Site-to-Site"],     desc:"Full plant moves, heavy machinery, robots, CMM machines, furnaces, production lines, vaccum packing experts, heavy machinery packing in imported saw & pine wood  ." },
   { num:"02", title:"Art, Heritage & Artifacts",    tags:["White Glove","Govt. Cleared","Climate-Safe"], desc:"Museum-grade handling of paintings, sculptures, and rare artifacts. Trusted by Rashtrapati Bhawan's Art Secretariat for the Presidential Museum." },
-  { num:"03", title:"Export & International",       tags:["Vacuum Packing","40HQ Containers","Global"],  desc:"Vacuum packing, export-grade wooden crating, full 40HQ container shipments to USA, UK, Australia, Chile, Balkans, and Dubai." },
-  { num:"04", title:"Corporate & IT Assets",        tags:["ESD-Safe","Chain of Custody","Zero Loss"],    desc:"Large-scale office moves, 100,000+ IT assets relocated during COVID for Ameriprise, WNS, and WHO South-East Asia." },
+  { num:"03", title:"Export & International",       tags:["Vacuum Packing","Risk Free Solutions","Global"],  desc:"Vacuum packing, export-grade wooden crating, Shipments to USA, UK, Australia, Canada, South Africa, Scandinavia and Dubai." },
+  { num:"04", title:"Corporate & IT Assets",        tags:["ESD-Safe","Chain of Custody","Zero Loss"],    desc:"Large-scale office moves, 100,000+ IT assets like laptops, desktops, hubs, servers, switches are relocated for Ameriprise, WNS, Unicharm and WHO South-East Asia." },
   { num:"05", title:"Exhibition & Events",          tags:["Time-Critical","Govt. Events","Setup & Strike"], desc:"End-to-end setup, display packing, and dismantling for G20 Summit, National Handicrafts Awards at Vigyan Bhawan." },
-  { num:"06", title:"Luxury & Specialty",           tags:["High-Value","Recurring","Precision"],         desc:"Annual packing/unpacking of Maharaja Express — chandeliers, bespoke furniture, and custom fittings under strict timelines." },
+  { num:"06", title:"Luxury & Specialty",           tags:["High-Value","Recurring","Precision"],         desc:"Annual packing/unpacking of Maharaja Express — Heritage Items, bespoke furniture, and custom fittings under strict timelines." },
 ];
 
 // ─── PROJECTS ───────────────────────────────────────────────
 export const PROJECTS = [
   { client:"Rashtrapati Bhawan",        title:"Presidential Museum",          tag:"Heritage · Govt.",       year:"Ongoing",   desc:"Rare paintings, sculptures & artifacts for the Art Secretariat's Presidential Museum." },
-  { client:"IRCTC · Maharaja Express",  title:"Luxury Train Interiors",       tag:"Luxury · Annual",        year:"Recurring", desc:"Seasonal packing of chandeliers, bespoke furniture & custom train fittings." },
-  { client:"Industrial Client",         title:"13-Ft Production Line",        tag:"Industrial · Record",    year:"2023",      desc:"Intact shift of a 13-foot production line — zero disassembly, zero downtime." },
-  { client:"Ameriprise / WNS",          title:"1 Lakh IT Assets — COVID",     tag:"Corporate · Scale",      year:"2020–21",   desc:"100,000+ IT assets relocated under ESD-safe protocols during the pandemic." },
-  { client:"EPCH · Ministry of Textiles", title:"G20 Summit Exhibition",      tag:"Events · National",      year:"2023",      desc:"Full logistics, setup & dismantling for G20 handicraft pavilion at Vigyan Bhawan." },
+  { client:"IRCTC · Maharaja Express",  title:"Luxury Train Interiors",       tag:"Luxury · Annual",        year:"Recurring", desc:"Seasonal packing of Heritage items & custom train fittings." },
+  { client:"Industrial Client",         title:"Heavy Machinery Relocation",   tag:"Industrial · Record",    year:"2023",      desc:"Intact shift of a 13-foot production line — zero disassembly & leveling support." },
+  { client:"WNS currently Cape Gemini",          title:"1 Lakh IT Assets",     tag:"Corporate · Scale",      year:"2020–21",   desc:"Delivered Door to DoorIT setups with full safe packaging to IT Employees." },
+  { client:"CCIC · Ministry of Textiles", title:"G20 Summit Exhibition",      tag:"Events · National",      year:"2023",      desc:"Full logistics, setup & dismantling for G20 handicraft pavilion at Bharat Mandapam." },
   { client:"WHO South-East Asia",       title:"International Office Move",    tag:"International · Ongoing",year:"2018–2026", desc:"Trusted office relocation partner for WHO SEARO — 8 years of unbroken service." },
 ];
 
@@ -63,7 +63,20 @@ export const GALLERY_CATEGORIES = [
 export const CLIENTS = [
   "Rashtrapati Bhawan","WHO South-East Asia","EPCH · Ministry of Textiles",
   "CCIC","Ameriprise","WNS","Minda","Continental","Takahata",
-  "Senior Flexonics","Bando","Yakult","Unicharm","IRCTC",
+  "Senior Flexonics","Bando","Yakult","Unicharm","IRCTC","Maharaja’s Express",
+  "CASA Paradox",
+  "Flyjac",
+  "Amtech",
+  "Sunbeam",
+  "Camel",
+  "NCMG",
+  "Victora Auto",
+  "GKN Driveline",
+  "Daikin",
+  "Samsung",
+  "Airtel",
+  "Coin Tribe",
+  "JS Power"
 ];
 
 // ─── ABOUT CREDENTIALS ──────────────────────────────────────
@@ -71,22 +84,22 @@ export const CREDENTIALS = [
   { org:"Rashtrapati Bhawan · Art Secretariat", desc:"Packing & shifting rare artifacts for Presidential Museum" },
   { org:"WHO South-East Asia",                  desc:"Office relocation partner — 2018 to 2026, ongoing" },
   { org:"EPCH · Ministry of Textiles",          desc:"G20 Summit, National Handicrafts Awards, Vigyan Bhawan" },
-  { org:"Ameriprise / WNS",                     desc:"100,000+ IT assets during COVID-19 disruptions" },
-  { org:"IRCTC · Maharaja Express",             desc:"Annual luxury train packing — chandeliers & interiors" },
+  { org:"Ameriprise / WNS",                     desc:"100,000+ IT assets, servers, switches & hubs" },
+  { org:"IRCTC · Maharaja Express",             desc:"Annual luxury train packing — furnitures & interiors" },
 ];
 
 export const STATS = [
   { n:"2017", l:"Founded"           },
   { n:"100+", l:"Industrial Clients"},
   { n:"1L+",  l:"IT Assets Moved"   },
-  { n:"8+",   l:"Countries Exported"},
+  { n:"100+",   l:"Countries Exported"},
 ];
 
 // ─── CONTACT INFO ────────────────────────────────────────────
 export const CONTACT_INFO = [
   { label:"Company",    value:"Shree Radhey Relocation Services" },
   { label:"Location",   value:"New Delhi, India"                 },
-  { label:"WhatsApp",   value:"+91 99999 99999"                  },
+  { label:"WhatsApp",   value:"+91 9319571414,9810499121"                  },
   { label:"Speciality", value:"Industrial · Heritage · Corporate · Export" },
   { label:"Since",      value:"2017 — 8 Years of Trusted Service" },
 ];
@@ -106,7 +119,8 @@ export const SERVICE_TYPES = [
 export const TRUST_ITEMS = [
   "Rashtrapati Bhawan · Art Secretariat",
   "WHO South-East Asia · 2018–2026",
-  "G20 Summit · EPCH & CCIC",
+  "G20 Summit · CCIC",
+  "Shilp Guru Awards · EPCH",
   "Maharaja Express · IRCTC",
-  "100+ Industrial MNCs",
+  "100+ MNCs & Institutions",
 ];

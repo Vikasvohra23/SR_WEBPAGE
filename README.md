@@ -17,7 +17,7 @@ npm run preview   # preview production build
 
 ## Before Going Live — 3 Things to Update
 
-Open `src/data/constants.js` and change:
+Open `src/data/constants.js` and change: // Already Done
 
 | Variable         | What to put                        |
 |------------------|------------------------------------|

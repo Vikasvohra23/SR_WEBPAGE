@@ -22,9 +22,44 @@ function PlaceholderTile({ caption, category }) {
   )
 }
 
+/* ── Helper: Check if file is video ─────────────────────── */
+function isVideoFile(src) {
+  return src && /\.(mp4|mov)$/i.test(src)
+}
+
+/* ── Video Thumbnail with Preview ──────────────────────── */
+function VideoThumbnail({ src }) {
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <video
+        src={src}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          objectPosition: 'center',
+          display: 'block'
+        }}
+      />
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'rgba(0,0,0,0.3)',
+        fontSize: '2.5rem'
+      }}>
+        ▶️
+      </div>
+    </div>
+  )
+}
+
 /* ── Lightbox ─────────────────────────────────────────────── */
 function Lightbox({ images, index, onClose, onPrev, onNext }) {
   const img = images[index]
+  const isVideo = img?.src && /\.(mp4|mov)$/i.test(img.src)
 
   // Keyboard nav
   useEffect(() => {
@@ -44,7 +79,11 @@ function Lightbox({ images, index, onClose, onPrev, onNext }) {
       <div className="lightbox" onClick={e => e.stopPropagation()}>
         <button className="lightbox__close" onClick={onClose} aria-label="Close">✕</button>
         <button className="lightbox__nav lightbox__nav--prev" onClick={onPrev} aria-label="Previous">‹</button>
-        <img src={img.src} alt={img.caption} />
+        {isVideo ? (
+          <video src={img.src} controls muted style={{ maxWidth: '100%', maxHeight: '80vh', objectFit: 'contain' }} />
+        ) : (
+          <img src={img.src} alt={img.caption} />
+        )}
         <button className="lightbox__nav lightbox__nav--next" onClick={onNext} aria-label="Next">›</button>
         {img.caption && (
           <div className="lightbox__caption">{img.caption}</div>
@@ -138,7 +177,11 @@ export default function Gallery() {
             >
               {img.src ? (
                 <>
-                  <img src={img.src} alt={img.caption} loading="lazy" />
+                  {isVideoFile(img.src) ? (
+                    <VideoThumbnail src={img.src} />
+                  ) : (
+                    <img src={img.src} alt={img.caption} loading="lazy" />
+                  )}
                   <div className="gallery-item__overlay">
                     <span className="gallery-item__caption">{img.caption}</span>
                   </div>
