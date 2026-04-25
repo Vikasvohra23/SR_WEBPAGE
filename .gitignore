@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+.DS_Store
+.env
+.env.*
+.idea/
+.vscode/
+npm-debug.log*
+coverage/
+*.log
+/.sass-cache
