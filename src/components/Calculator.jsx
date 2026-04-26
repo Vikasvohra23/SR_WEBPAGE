@@ -247,14 +247,20 @@ Rate:        ₹${RATE_PER_CFT}/CFT
                     </div>
                     <div className="estimate-total-row">
                       <div className="estimate-note">
-                        <div className="estimate-note__label">Packing Charges (Approx.)</div>
-                        <div className="estimate-note__text">
-                          Our team will contact you with the final breakup including transportation,
-                          floor charges, and any special handling.
+                        <div className="estimate-note__label">Estimated Packing Charges</div>
+                        <div style={{ display:'flex', alignItems:'baseline', gap:'0.5rem', marginTop:'0.4rem' }}>
+                          <span style={{ fontFamily:"'Playfair Display',serif", fontSize:'2rem', color:'var(--gold)', fontWeight:700 }}>
+                            ₹{totalCost.toLocaleString('en-IN')}
+                          </span>
+                          <span style={{ fontSize:'0.72rem', color:'var(--muted)' }}>approx.</span>
+                        </div>
+                        <div style={{ marginTop:'0.75rem', padding:'0.7rem 0.9rem', background:'rgba(201,168,76,0.06)', border:'1px solid var(--border-gold)', borderRadius:6, fontSize:'0.78rem', color:'var(--muted)', lineHeight:1.6 }}>
+                          💬 <strong style={{ color:'var(--white)' }}>Want a discount or need transport?</strong><br />
+                          Submit your list on WhatsApp and our team will contact you shortly with a complete quote including transport, floor charges &amp; special handling.
                         </div>
                       </div>
-                      <p className="estimate-disclaimer mt-2">
-                        * This is a packing-only estimate. Final quote may vary based on distance, floors, and access conditions.
+                      <p style={{ fontSize:'0.68rem', color:'var(--muted)', opacity:0.6, marginTop:'0.6rem' }}>
+                        * Packing estimate only. Final charges may vary based on distance, floors &amp; access conditions.
                       </p>
                     </div>
 
