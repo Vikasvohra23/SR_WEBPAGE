@@ -2,15 +2,15 @@
 export const YOUR_WA_NUMBER   = "9319571414";   // e.g. 919876543210
 export const YOUR_EMAIL       = "sr.relocationservices@gmail.com"; // for mailto fallback
 export const ADMIN_PASSWORD   = "srrs2017";        // change this!
-export const RATE_PER_CFT     = 120;               // hidden from clients
+export const RATE_PER_CFT     = 60;               // hidden from clients
 
 // ─── NAV ────────────────────────────────────────────────────
 export const NAV_LINKS = ["Home","Services","About","Projects","Gallery","Estimate","Contact"];
 
 // ─── CFT ITEMS  (cft values hidden from UI) ──────────────────
 export const CFT_ITEMS = [
-  { id:"bed",          label:"Bed (Double)",        cft:50  },
-  { id:"half_bed",     label:"Bed (Single)",        cft:25  },
+  { id:"bed",          label:"Bed (Double)",        cft:100  },
+  { id:"half_bed",     label:"Bed (Single)",        cft:50  },
   { id:"wardrobe",     label:"Wardrobe",            cft:60  },
   { id:"sofa3",        label:"Sofa (3-Seater)",     cft:45  },
   { id:"sofa2",        label:"Sofa (2-Seater)",     cft:30  },
@@ -19,10 +19,10 @@ export const CFT_ITEMS = [
   { id:"dining_table", label:"Dining Table",        cft:25  },
   { id:"chair",        label:"Chair",               cft:5   },
   { id:"fridge",       label:"Refrigerator",        cft:20  },
-  { id:"washing",      label:"Washing Machine",     cft:18  },
+  { id:"washing",      label:"Washing Machine",     cft:25  },
   { id:"microwave",    label:"Microwave / OTG",     cft:6   },
   { id:"ac",           label:"AC (Split/Window)",   cft:12  },
-  { id:"tv",           label:'TV (40"+)',            cft:10  },
+  { id:"tv",           label:'TV (40"+)',            cft:30  },
   { id:"bike",         label:"Two-Wheeler",         cft:80  },
 ];
 
